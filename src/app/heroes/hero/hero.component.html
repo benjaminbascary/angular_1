@@ -1,0 +1,26 @@
+<div class="hero__container">
+  <div>
+    <h2>Hero</h2>
+    <dl>
+      <td>Name: </td>
+      <dd>{{name}}</dd>
+
+      <td>Age: </td>
+      <dd>{{age}}</dd>
+
+      <td>Function: </td>
+      <dd>{{ getName() }}</dd>
+
+      <td>Capitalized: </td>
+      <dd>{{ capitalizedName }}</dd>
+    </dl>
+  </div>
+  <div>
+    <button (click)="changeName()">
+      Change name
+    </button>
+    <button (click)="changeAge()">
+      Change age
+    </button>
+  </div>
+</div>
