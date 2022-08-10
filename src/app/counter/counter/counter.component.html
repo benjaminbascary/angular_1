@@ -1,0 +1,13 @@
+<div class="main__component__container">
+  <div class="main__title">
+    {{title}}
+  </div>
+  <div class="main__count">
+    <span>{{ count }}</span>
+    <span>The base is: <strong>{{base}}</strong></span>
+  </div>
+  <div class="main__buttons">
+    <button (click)="setCount(true)">Add</button>
+    <button (click)="setCount(false)">Substract</button>
+  </div>
+</div>
