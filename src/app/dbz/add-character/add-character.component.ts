@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Character } from '../interfaces/Character';
 
 @Component({
   selector: 'app-add-character',
@@ -8,10 +9,28 @@ import { Component, Input } from '@angular/core';
 export class AddCharacterComponent {
 
   @Input()
-  addCharacter() {}
+    newCharacter: Character = {
+      name: '',
+      power: 0
+    }
 
-  @Input()
-  newCharacter: any
+  @Output() 
+    addNewCharacter: EventEmitter<Character> = new EventEmitter<Character>();
+
+  addCharacter() {
+    if (this.newCharacter.name.trim().length === 0 || this.newCharacter.power === 0) {
+      return
+    };
+    this.addNewCharacter.emit(this.newCharacter);
+
+    //Then we purge new character
+    this.newCharacter = {
+      name: '',
+      power: 0
+    }
+    
+  }
+  
 }
 
 

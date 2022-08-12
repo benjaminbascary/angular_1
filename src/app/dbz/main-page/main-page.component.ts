@@ -25,17 +25,9 @@ export class MainPageComponent {
     power: 0
   }
 
-  addCharacter() {
-    if (this.newCharacter.name.trim().length === 0 || this.newCharacter.power === 0) {
-      return
-    };
-
-    this.characters.push(this.newCharacter);
-    // Purge new character
-    this.newCharacter = {
-      name: '',
-      power: 0
-    }
+  addNewCharacter(character: Character): void {
+    console.log(character);
+    this.characters.push(character);
   }
 
 }
