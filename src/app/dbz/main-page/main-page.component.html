@@ -5,14 +5,11 @@
     
     <div class="col">
         <!-- imports characters module -->
-        <app-characters [characters]="characters"></app-characters>
+        <app-characters></app-characters>
 
     </div>
     <div class="col form">
-        <app-add-character
-            [newCharacter]="newCharacter"
-            (addNewCharacter)="addNewCharacter( $event )"
-        ></app-add-character>
+        <app-add-character></app-add-character>
             
         
         <!-- <h3>Agregar nuevo personaje:</h3>

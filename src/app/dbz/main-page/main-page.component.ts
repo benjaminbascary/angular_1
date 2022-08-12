@@ -13,27 +13,17 @@ import { DbzService } from '../services/dbz.service';
 })
 export class MainPageComponent {
 
-  constructor(private dbzService: DbzService) {}
+  constructor(/* private dbzService: DbzService */) { };
 
-  characters: Character[] = [
-    {
-      name: 'Goku',
-      power: 15000
-    },
-    {
-      name: 'Vegetta',
-      power: 7500
-    }
-  ]
+  // newCharacter: Character = {
+  //   name: '',
+  //   power: 0
+  // }
 
-  newCharacter: Character = {
-    name: '',
-    power: 0
-  }
-
-  addNewCharacter(character: Character): void {
-    console.log(character);
-    this.characters.push(character);
-  }
+  // addNewCharacter(character: Character): void {
+  //   console.log(character);
+  //   //this.characters.push(character);
+  //   this.dbzService.setCharacters(character);
+  // }
 
 }
