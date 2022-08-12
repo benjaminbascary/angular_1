@@ -17,7 +17,6 @@ export class AddCharacterComponent {
       power: 0
     }
 
-
   addCharacter() {
     if (this.newCharacter.name.trim().length === 0 || this.newCharacter.power === 0) {
       return
