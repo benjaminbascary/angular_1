@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+// Created by user
 import { Character } from '../interfaces/Character';
+
+//Services
+import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-main-page',
@@ -8,6 +12,8 @@ import { Character } from '../interfaces/Character';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
+
+  constructor(private dbzService: DbzService) {}
 
   characters: Character[] = [
     {

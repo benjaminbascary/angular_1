@@ -21,6 +21,7 @@ export class AddCharacterComponent {
     if (this.newCharacter.name.trim().length === 0 || this.newCharacter.power === 0) {
       return
     };
+    
     this.addNewCharacter.emit(this.newCharacter);
 
     //Then we purge new character
