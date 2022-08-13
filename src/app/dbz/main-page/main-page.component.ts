@@ -1,10 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-// Created by user
-import { Character } from '../interfaces/Character';
-
-//Services
-import { DbzService } from '../services/dbz.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-main-page',

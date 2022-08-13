@@ -27,7 +27,8 @@ export class DbzService {
     }
 
     getCharacters(): Character[] {
-        // We pass the array as a brand new array to avoid passing the reference. Instead we pass an entire new array
+        // We pass the array as a brand new array to avoid passing the reference. 
+        // Instead we pass an entire new array
         return [...this._characters];
     }
 }

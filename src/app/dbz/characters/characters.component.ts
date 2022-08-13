@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 // Interfaces
 import { Character } from '../interfaces/Character';
